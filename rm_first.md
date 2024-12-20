@@ -18,10 +18,10 @@
 ##dvc_djimotor.cpp  
 
 首先来看下修改缓冲区结构  
-！[修改缓冲区1](./images/修改缓冲区1.png)  
-！[修改缓冲区2](./images/修改缓冲区2.png)  
+![修改缓冲区1](./images/修改缓冲区1.png)  
+![修改缓冲区2](./images/修改缓冲区2.png)  
 
-！[修改缓冲区3](./images/修改缓冲区3.png)  
+![修改缓冲区3](./images/修改缓冲区3.png)  
 首先tmp_tx_data_ptr以一个指针暂时指向缓冲区tx数据，tmp_tx_data_ptr这个作为返回值返回给*allocate_tx_data，然后CAN_Tx_Data指向*allocate_tx_data，最后Out(pid最后输出的)给到了CAN_Tx_Data  
 总而言之，PID最后输出的out，给到了缓冲区tx，通过drv_can.cpp控制电机   
 
@@ -33,3 +33,4 @@
 因为我的PID还没跑通，其余的也说不了啥
 
 
+S
